@@ -27,28 +27,22 @@ export default class Step5 extends Component {
       expectedCompany,
       minSalary,
       expectedRoleType,
-      contactSource
+      contactSource,
     } = this.state
 
-    const myTechStack = () => {
-      techStack.map((tech) => {
-        const {content} = tech
-        return content
-      })
-    }
 
-    const myPriority = () => {
-      priority.map((priorityItem) => {
-        return priorityItem
-      })
-    }
+    const myTechStack = techStack.map((tech) => 
+        <li>{tech}</li>
+    )
 
-    const myExpectedCompany = () => {
-      expectedCompany.map((company) => {
-        return company
-      })
-    }
+    const myPriority = priority.map((priorityItem) => 
+        <li>{priorityItem.content}</li>
+    )
 
+    const myExpectedCompany = expectedCompany.map((company) => 
+        <li>{company}</li>
+    )
+    
 
     return (
 
@@ -106,7 +100,7 @@ export default class Step5 extends Component {
 
                 <div className="displayField">
                   <p className="labelField">Technologies</p>
-                  <p className="resultField">{myTechStack}</p>
+                  <p className="resultField"><ul>{myTechStack}</ul></p>
                 </div>
 
                 <div className="displayField">
@@ -118,7 +112,7 @@ export default class Step5 extends Component {
           <div className="flex-item displayBlock">
                 <div className="displayField">
                   <p className="labelField">Order of Importance</p>
-                  <p className="resultField">{myPriority}</p>
+                  <p className="resultField"><ol>{myPriority}</ol></p>
                 </div>
 
                 <div className="displayField">
@@ -128,7 +122,7 @@ export default class Step5 extends Component {
 
                 <div className="displayField">
                   <p className="labelField">Type of company like to work in next</p>
-                  <p className="resultField">{myExpectedCompany}</p>
+                  <p className="resultField"><ul>{myExpectedCompany}</ul></p>
                 </div>
 
                 <div className="displayField">
