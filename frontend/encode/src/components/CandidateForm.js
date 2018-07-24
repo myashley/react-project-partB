@@ -97,11 +97,13 @@ export default class CandidateForm extends Component {
   
       return (
         <div className='flex-container'>
+        <div className='flex-item flex-item-large'>
         <div className='candidateForm'>
           <div className='step-progress'>
             <StepZilla
               steps={steps}
               preventEnterSubmission={true}
+              prevBtnOnLastStep={false}
               hocValidationAppliedTo={[1, 2, 3]}
               nextTextOnFinalActionStep={"Confirm & Submit"}
               nextButtonText={"Save & Next"}
@@ -109,6 +111,7 @@ export default class CandidateForm extends Component {
               onStepChange={(step) => window.sessionStorage.setItem('step', step)}
              />
           </div>
+        </div>
         </div>
         </div>
       )

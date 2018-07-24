@@ -32,15 +32,15 @@ export default class Step5 extends Component {
 
 
     const myTechStack = techStack.map((tech) => 
-        <li>{tech}</li>
+        <li className="list">{tech}</li>
     )
 
     const myPriority = priority.map((priorityItem) => 
-        <li>{priorityItem.content}</li>
+        <li className="list">{priorityItem.content}</li>
     )
 
     const myExpectedCompany = expectedCompany.map((company) => 
-        <li>{company}</li>
+        <li className="list">{company}</li>
     )
     
 

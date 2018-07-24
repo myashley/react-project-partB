@@ -2,6 +2,7 @@
 ol.progtrckr {
     list-style-type: none;
     padding: 0;
+    text-align: center;
   }
   
 ol.progtrckr li {
@@ -11,11 +12,12 @@ ol.progtrckr li {
   cursor: pointer;
 }
 
-ol.progtrckr li span {
+/* ol.progtrckr li span {
   padding: 0 1.5rem;
-}
+} */
 
-@media (max-width: 650px) {
+/* 650px */
+@media (max-width: 834px) {
   .progtrckr li span {
     display: none;
   }
@@ -26,7 +28,7 @@ ol.progtrckr li span {
   padding-left: 1rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 834px) {
   .progtrckr em {
     display: inline;
   }
@@ -114,6 +116,9 @@ ol.progtrckr li.progtrckr-done:hover:before {
   margin: 0.5em;
   padding: 1em;
   background: #FFFFFF;
+}
+.flex-item-large {
+  max-width: 45em;
 }
 
 form {
@@ -291,6 +296,10 @@ h2 {
   margin-top: 1.5em;
 }
 
+h3 {
+  text-align: center;
+}
+
 .displayBlock {
   border: 0.75px solid #FF7A1D;
 }
@@ -306,7 +315,7 @@ h2 {
   margin-top: 0.8em;
 }
 
-ol li, ul li{
+ol li.list, ul li.list{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   padding-bottom: 0.3em;
