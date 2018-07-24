@@ -31,17 +31,22 @@ export default class Step5 extends Component {
     } = this.state
 
 
-    const myTechStack = techStack.map((tech) => 
+    if (techStack) {
+      var myTechStack = techStack.map((tech) => 
         <li className="list">{tech}</li>
     )
-
+    }
+    
     const myPriority = priority.map((priorityItem) => 
         <li className="list">{priorityItem.content}</li>
     )
 
-    const myExpectedCompany = expectedCompany.map((company) => 
+    if (expectedCompany) {
+      var myExpectedCompany = expectedCompany.map((company) => 
         <li className="list">{company}</li>
     )
+    }
+    
     
 
     return (
@@ -100,7 +105,7 @@ export default class Step5 extends Component {
 
                 <div className="displayField">
                   <p className="labelField">Technologies</p>
-                  <p className="resultField"><ul>{myTechStack}</ul></p>
+                  <p className="resultField"><ul>{techStack ? myTechStack : null }</ul></p>
                 </div>
 
                 <div className="displayField">
@@ -122,7 +127,7 @@ export default class Step5 extends Component {
 
                 <div className="displayField">
                   <p className="labelField">Type of company like to work in next</p>
-                  <p className="resultField"><ul>{myExpectedCompany}</ul></p>
+                  <p className="resultField"><ul>{expectedCompany ? myExpectedCompany : null }</ul></p>
                 </div>
 
                 <div className="displayField">
@@ -144,5 +149,7 @@ export default class Step5 extends Component {
         </div>       
       </div>
     )
+
+
   }
 }
