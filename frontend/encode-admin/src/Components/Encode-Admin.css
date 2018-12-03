@@ -135,6 +135,10 @@ h3 {
     text-align: center;
 }
 
+h3.card {
+    text-align: left;
+}
+
 .displayBlock {
     border: 0.75px solid #FF7A1D;
 }

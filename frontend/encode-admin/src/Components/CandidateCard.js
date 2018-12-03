@@ -14,7 +14,7 @@ export default function CandidateCard({
                 <div className="candidate flex-item">
                     <Link to={`/candidates/${_id}`}>  
                         <div className="candidate-details">
-                            <h3>{firstName} {lastName}</h3>
+                            <h3 className="card">{firstName} {lastName}</h3>
                             <h4>{currentJobTitle}</h4>
                             <p>{location}</p> 
                         </div>
