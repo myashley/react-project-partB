@@ -114,9 +114,6 @@ https://encode-admin.now.sh
 
 There is plenty of room for improvement. There were a lot of features we would have liked to add but due to time constraints, we were unable to include everything. The app has a lot of potential to help many people, and with the right support, it can be used as a commercial product.
 
-### Project Review
-
-This project has been a great learning experience. I really enjoyed working in the team environment and learnt a lot about myself as well. I feel a great sense of self-accomplishment after completing this app, and am more motivated than ever to keep building new things to make other people's lives easier. I had a great time working with my team, we worked well with each other and I feel like we established a special bond that will last a lifetime. I look forward to future development and teamwork in the industry, I am now confident I can make a solid contribution to any project and team."
   
 
 
